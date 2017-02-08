@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Our Environment</title>
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <script type='text/javascript' src='http://code.jquery.com/jquery-2.1.3.js'></script>
+  <script type='text/javascript' src='js/mainmenu.js'></script>
+</head>
+<body>
+    <div id="headLinks"></div>
+    
+    <h1>Explorable Explanation Inspirations</h1>
+
+    <h2>Frameworks</h2>
+
+http://ideonexus.com/wp-content/uploads/2010/01/RyanSomma-CIS518FinalProject.pdf
+
+    <p>Nothing in the world of information technology today is produced in a vacuum. Everything we create is built on the thousands-years foundation of inventions that has come before us. In software development, we can develop rapidly if we develop in an environment where many of the common problems are already solved. Programming languages solve many basic problems. They let us round() numbers, get an .indexOf() a substring() in a string, replace() characters in a string, or perform otherwise complex operations on a Date().</p>
+
+    <p>While programming languages provide broadly-used functionality, these functions are basic and are meant to meet common needs when dealing with math, text, or date function. Taking the abstraction further, software frameworks provide a core solution for building an application of a specific type. For example, I think JavaScript has matured into a fantastic programming language, but for web design the <b>jQuery</b> framework makes manipulating HTML and building web applications much easier--but frameworks can be even more specific to a domain. Today there are frameworks to empower building all sorts of amazing applications. The frameworks listed here are only a small sample and are generalized enough to be useful in a wide variety of domains.</p>
+
+    <h3>Charts and Visualization Frameworks</h3>
+
+    <p>There are a multitude <b>charting frameworks</b> that make displaying data in line graphs, bar charts, venn diagrams, scatter plots, and even animating displays as data changes as easy as plugging in some numbers. Different charting frameworks provide different features and varying levels of ease in development. In some, it can be as easy as coding .PieChart() with some data fed to the function. I recently used <b>Google Charts</b> to easily build a map of the United States with various dimensions of sales data and allowing the user to drill down into that data:</p>
+
+    <p><img src="images/salesmap.png" /></p>
+
+
+    <h3>Chatbot Frameworks</h3>
+
+    <p>In 1950, Alan Turning, father of theoretical computer science and artificial intelligence, proposed a method for evaluating the ability of a computer to exhibit intelligence equivalent to that of a human being (Beavers, 2013). Known today as the <b>Turing Test</b>, the method involved a user participating in a double-blind conversation with both a human and a computer. The computer program passes the test if the evaluator cannot reliably tell which is the human and which the computer (Turing, 1950). Since 1991, the--notably controversial--Loebner Prize has held an annual contest evaluating software applications based on how well they perform on the Turing Test.</p>
+
+    <p>The Loebner Prize is controversial because the Turing Test is a controversial measure. Philosopher  John Searle proposed a thought experiment known as the <b>Chinese Room</b>, where an English-speaker sits in a room, receiving instructions from a Chinese-speaker outside the room. The English-speaker, knowing nothing of Chinese, reviews the written symbols, consults a library of instructions, and responds with Chinese ideograms as the instructions indicate without knowing anything about the content of the inputs or outputs (Searle, 1980). The English-speaker behaves like a computer, but we would not describe the behavior as intelligent.</p>
+
+    <p>Many winners of the Loebner Prize work exactly like the human being in the Chinese Room. I have spent many hours working with the 2000, 2001, and 2004 winner, the Artificial Linguistic Internet Computer Entity (A.L.I.C.E.), created by Dr. Richard S. Wallace, uses Artificial Intelligence Markup Language (AIML), another *ML like XML, HTML or XHTML, which looks for a &lt;pattern&gt; in user-inputs and outputs the &lt;template&gt; like so:</p>
+
+    <pre>
+        &lt;category&gt;
+            &lt;pattern&gt;JULES VERNE&lt;/pattern&gt;
+            &lt;template&gt;I loved A Trip to the Moon.&lt;/template&gt;
+        &lt;/category&gt;
+        &lt;category&gt;
+            &lt;pattern&gt;ASIMOV&lt;/pattern&gt;
+            &lt;template&gt;The Foundation Trilogy was the fall of the Roman Empire on a galactic scale.&lt;/template&gt;
+        &lt;/category&gt;
+    </pre>
+
+    <p>Alice was effective because it had <em>thousands</em> of these entries, but it doesn't know what it's talking about. We call programs like these <b>Chatbots</b>, and they are growing more sophisticated all the time. Microsoft, Facebook, and even Disney have released platforms for developing them, primarily for providing customer support without the cost of hiring a human being. Some use workflows similar to those you encounter in a self-service phone system.</p>
+
+    <p>Chatbots are great project for students when restricted to a single subject unit. A student could program a chatbot with the terms from the current chapter in a science, history, or other textbook and then have the teacher "quiz" the chatbot on those concepts. Keeping in mind that programing a computer is like teaching an especially obtuse person, having a student "teach" a chatbot how to speak with a modicum of intelligence on a narrow subject requires a deeper exploration and internalization of that subject than memorizing facts for a test.</p>
+
+Eliza
+Alicebot http://www.alicebot.org/ AIML
+Pandorabots, Facebook Messenger, Microsoft Skype, Disney Imperson, 
+https://github.com/nsdevaraj/AIChat
+Extend the automated phone services that can so often infuriate customers...
+https://github.com/ddsky/chatbot
+
+Beavers, Anthony (2013). "Alan Turing: Mathematical Mechanist". In Cooper, S. Barry; van Leeuwen, Jan. Alan Turing: His Work and Impact. Waltham: Elsevier. pp. 481–485. ISBN 978-0-12-386980-7.
+
+Searle, John (1980), "Minds, Brains and Programs", Behavioral and Brain Sciences, 3 (3): 417–457, doi:10.1017/S0140525X00005756, retrieved May 13, 2009
+
+Turing, Alan (October 1950), "Computing Machinery and Intelligence", Mind, LIX (236): 433–460, doi:10.1093/mind/LIX.236.433, ISSN 0026-4423, retrieved 2008-08-18
+
+    <h3>Board Game and RPG Game Frameworks</h3>
+
+    <p>Gamification is a big deal in marketing and education right now. If you can turn a product into a game, customers will engage with it more fully. If you can teach children through games, they will immerse themselves more deeply in the subject. Every game your student coders build for your class and your school to educate their peers is a win, but building a game from scratch is <b>hard</b>. The programmer must solve physics, collisions, animations, distances, controls, and many more hard problems that a single researcher could pick just one of which and write a thesis on it.</p>
+
+    <p>Luckily we have <b>Board Game</b> and <b>Role-Playing Game</b> frameworks that comprise libraries of solutions to all these problems. They contain easy functions like onKeyDown() or onMouseClick() to handle keyboard and mouse inputs for controllng sprites on the game mat (craftyjs, 2016). They allow for setting up trigger() events that "listen" for events in the game and then execute an action in response to certain conditions being met.  Most of these frameworks are for creating two-dimensional games, like board games that can run in a browser, but there are 3D engines as well for creating environments in which the user may have their hearing and vision completely augmented into a virtual world.</p>
+
+http://craftyjs.com/
+
+Code Commander
+https://github.com/rcmorris/Code-Commander
+
+    <p><b>Role-Playing Games</b> ... </p>
+http://www.lostdecadegames.com/how-to-make-a-simple-html5-canvas-game/
+
+    <h3>3D Computer Animation Frameworks</h3>
+
+    <p>Javascript frameworks like <b>three.js</b> are making it easier than ever to produce mind-blowing interactive 3D computer animations <em>in a web browser</em> using the Web Graphics Library (WebGL) API. Computer animation frameworks allow for building complex 3D shapes, algorithms for generating geographies, a wide variety of animation types, allowing users to control the camera and explore the creations. There are thousands of open-source projects out there making use of this amazing invention righ this moment. The three.js website currently lists over 300 demos, including virtual earths, clouds of spinning cartoon monkey heads, virtual cloth blowing in a breeze, objects falling on rippling terrain, a torus made of flowing lava, morphing tea kettles, molecules for various compounds, and many other mind-blowing demos that are--quite honestly--horribly intimidating... that is... until you realize <em>all the code is there for you to take an make your own</em>.</p>
+
+    <p>One example of the power of three.js and WebGL that really struck me was a comparatively simple demo of the platform's "logarithmic depth buffer" (which I put in quotes because I'm not entirely sure what it is). By scrolling the mouse-wheel in and out, the app smoothly takes you from a dot labeled "microscopic 1um" out through "city-sized (10 km)," "planet-sized (12,000 km),"solar system-sized (50 Au)," "mind boggling (1,000 ligh years)," all the way to "... (100,000,000 light years)." It was like the iconic short film "Powers of Ten" by Charles and Ray Eames, which starts with a couple having a picnic in Chicago and then zooms out to view the cluster of galaxies before zooming back in all the way down to the interior of a single atom--except, this demo was <em>interactive</em>. The audience member, instead of passively observing the changing perspective, becomes the pilot--an explorer navigating fantastical worlds of scale. One inspiration for me in encouraging others to code is the possibility of seeing how others will expand upon and enhance this simple demonstration.</p>
+
+    <p><img src="images/webglscale.png" /></p>
+
+https://threejs.org/examples/
+https://threejs.org/examples/#webgl_camera_logarithmicdepthbuffer
+
+Powers of Ten (film) Charles and Ray Eames.
+https://en.wikipedia.org/wiki/Powers_of_Ten_(film)
+
+    <h3>Virtual Reality Frameworks</h3>
+
+    <p>For the past few years, gamers have been obsessed with news about virtual reality (VR) headsets that will put players into virtual worlds in which they can look around and interact with their surroundings. While these technologies are incredibly impressive, they also come with price tags in the hundreds of dollars. This presents a imposing financial barrier to most parents and students. I predict that, just as we saw information technology and the internet take years to trickle out to poor communities, it might be a long time before high-quality VR comes to low-income audiences.</p>
+
+    <p>But once again, it's open-source to the rescue! In 2014, two years after fans donated $2,437,429 to the development of the Occulus Rift VR headset (kickstarter, 2012), google researchers David Coz and Damien Henry realized they could make a pretty descent VR headset with a pizza box, two lenses, and a cellphone (Connexion, 2014). They dubbed the invention <em>Google Cardboard</em>, and made the plans available free online for anyone to build their own. Soon, numerous companies were selling pre-cut and assembled Cardboard kits at $10 to $15 each, meaning for less than the price of a single console video game students can be virtually exploring famous landmarks from all around the earth, watching movies on giant virtual movie screens, or viewing cultural artifacts from different angles (Lowensoh, 2014).</p>
+
+    <p>Just as three.js provides demos of what their software can do, Google provides a website of <b>Chrome Experiments for Virtual Reality</b> where developers can view amazing VR demonstrations of what's possible in a web browser. Students can ride a roller coaster, fly over a virtual city, or explore a geometric universe. Once again, the framework and demo code is there to take and make one's own.</p>
+
+Oculus Rift: Step Into the Game
+kickstarter
+https://www.kickstarter.com/projects/1523379957/oculus-rift-step-into-the-game
+
+Virtual reality headset for €20
+The Connexion
+October 21, 2014
+http://connexionfrance.com/French-Google-Coz-Henry-Cardboard-virtual-reality-headset-16274-view-article.html
+
+Google's Cardboard turns your Android device into a VR headset
+Josh Lowensohn
+Jun 25, 2014
+http://www.theverge.com/2014/6/25/5842188/googles-cardboard-turns-your-android-device-into-a-vr-headset
+
+panoramas - photosphere
+
+https://vr.google.com/cardboard/
+https://vr.chromeexperiments.com/
+
+    <h3>Machine Learning Frameworks</h3>
+    
+    <p>While charting, gaming, and even 3D javascript frameworks are well-established and stable. I would describe Google's VR software as bleeding edge. It's buggy and advanced, but instructive to work in for all its challenges. Another software on the border between cutting and bleeding edge is <b>Machine Learning</b>, that is, giving computers the ability to learn without being explicitly programmed (Arthur Samuel, 1959). In other words, the program will <em>learn</em> how to identify patterns and solve problems by feeding it data, allowing it to formulate answers or find patterns, and then test those answers against a human teacher or through negative/positive reinforcement (Kohavi, 1998).</p>
+    
+    <p>Machine learning is producing some incredible results. Computers are learning how to drive cars, play games, classify objects--without being told the categories before hand, and recognize patterns of meaning in speech (REFERENCE). At the same time, I must warn readers that I find machine learning <b>HARD</b>, and so do many other hackers. I have read many articles that are the equivalent to <em>Machine Learning for Dummies</em>, and I still only have the barest understanding of concepts like backpropagation, genetic algorithms, neural networks, and Bayesian networks. I have played with machine learning algorithms in JavaScript and C#, watching them produce outputs and perform math tricks that I am unable to truly appreciate.</p>
+
+    <p>This noted, I include Machine Learning frameworks here because I know many great minds who do understand and appreciate the technology. And I know that young brains will approach the subject open minds that are unencumbered with the preconceptions I suspect hinder my own understanding. If kids can understand machine learning, they might one day be able to explain it to adults like myself in terms we can understand.</p>
+
+“Some Studies in Machine Learning Using the Game of Checkers” in IBM Journal of Research and Development (Volume:3, Issue: 3), p. 210
+
+Ron Kohavi; Foster Provost (1998). "Glossary of terms". Machine Learning. 30: 271–274.
+
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Our Environment</title>
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <script type='text/javascript' src='http://code.jquery.com/jquery-2.1.3.js'></script>
+  <script type='text/javascript' src='js/mainmenu.js'></script>
+</head>
+<body>
+    <div id="headLinks"></div>
+    
+    <h1>Explorable Explanation Inspirations</h1>
+
+
+    <h2>Literacy</h2>
+
+    <h3>Abcedarian Apps</h3>
+
+    <p>When it comes to learning the alphabet, phonetics, site words, and the joys of text, I'm a big fan of exposing children to text in a wide variety ways. Software doesn't replace the hands-on activities like the ABC blocks, cut-out letters, flip-books, and other toys--I see those remaining king with my own children--but the animations, sound-effects, and interactivites of computer applications <em>compliment</em> all the other ways we expose children to the alphabet, phonetics, and reading.</p>
+
+    <p>A great source of app-inspiration for me are Montessori toys. Flip-books, spinning letter blocks, and alphabet gems readily translate into simple virtual toys that young kids can enjoy alongside their hands-on ones. For example, the <b>One-Letter Word Changer</b> shown below on the right is a digital version of the Montessorri word-blocks on the left. Clicking the up and down arrows cycles through the letter options, so "BOT" becomes "COT," "DOT," "GOT," "HOT," "NOT," etc. Taking advantage of Google Chrome's speechSynthesis javascript functionality, I have the browser read each word as it is selected.</p>
+
+    <p><img src="images/phoneticreadingannotated.jpg" /></p>
+
+    <p>Of course, as with all applications, I could not build it alone. I had help... lot's of it. The numbers I've added to the screenshot above correspond to web searches like the following:</p>
+
+    <ol>
+        <li>["how to trigger javascript when drop down list changes selection", "how to populate drop down list from array in javascript"]</li>
+        <li>["how to make an arrow with css", "how to cycle through drop down list options with button clicks"]</li>
+        <li>["how to style a button in css", "javascript to make the browser read text"]</li>
+    </ol>
+
+    <p>Once I had the One-Letter Word-Changer complete, it was an elementary task to adapt it into a <b>One-Word Sentence Changer</b>. Again, with some help from Google with questions like, "how to cycle through images with mouse clicks in javascript."</p>
+
+    <p><img src="images/onewordsentencechanger.png" /></p>
+
+    <p>Building on the ability to cycle through items. I built a <b>Word Families Explorer</b> to teach my kids sight words with common roots like "-ack," "-am," "-ate," "--ight," "-ine," "-ook," "-unk," etc. and cycle through the words with those roots, having the app speak each word as it comes up. For this, I created an array of words for each root like so:</p>
+
+    <p>families["ack"] = [ "attack", "back", "black", "crack", "hack", "Jack", "knack", "lack", "pack", "quack", "rack", "sack", "snack", "stack", "tack", "track", "whack", "Zack"];</p>
+
+    <p>Having this magnificient array of of word families at my disposal, I proceeded to build an <b>Alphabet Sorting Game</b>. Here I searched for "javascript drag-and-drop reorder list" and found several solutions which allow users to drag and drop items up and down the list. When words in the drag-and-drop list are at the same index or position in my alphabetically-sorted array, I highlight them. When all the words are highlighted in their proper places, I play a <em>ta daaaa!</em> MP3 and make the background flash a variety of random colors.</p>
+
+    <p>You know the game <em>Memory</em>, where you set out a bunch of cards face down and flip them over trying to find matches? A programmer by the username jamesbarnett posted such a game with funny cat pictures titled <em>LOLCatz Memory Game</em>. Replacing the cat pictures with words and making a few other tweeks to this project, I built a <b>Sight-Words Matching Game</b> that my kids and my friends' kids really love.</p>
+
+LOLCatz Memory Game
+jamesbarnett
+http://codepen.io/jamesbarnett/pen/kiGsl
+
+    <p>Another really neat project within the realm of student capability is <em>Sleep Furiously</em> a game by Filament Learning. The game presents the user with a grid of words, and they must click a path through the grid to create gramatically-correct sentences. It's fun because the sentences can be nonsensical, like "______." Building a simpler version of this game is something a student can totally do with an array of nouns and verbs to construct simple three-word sentences. Then they could add more arrays of maybe adverbs and pronouns, or verb and plurality agreement.</p>
+
+    <p>Realizing that words don't exist on their own, or even in isolated sentences, I wrote an application to guide my kids through the steps of reading a book with a <b>Creative Commons Book Reader</b>. Note the <em>Creative Commons</em> (CC) part. This is important. A CC license is similar to an open-source license in that the creator is empowering their audience to share their art. In my book reader, I included the book <em>Stick's Masterpiece</em> by the Brother's Whim and <em>We Are All Animals</em> by Pratham Books, both licensed so that I could freely incorporate them into my program so long as my program includes a credit to the publishers and is offerred under the same free-to-use license. In this application, students can click back-and-forth through pages or through individual words. They may also click on words to have the application read them aloud. Once you've figured out the basic previous-next functionality, it's easy to apply it to all sorts of concepts.</p>
+
+    <p><img src="images/creativecommonsbookreader.png" /></p>
+
+http://brotherswhim.com/
+https://www.scribd.com/collections/2300329/Creative-Commons-Originals
+
+    <h3>Typing Tutors</h3>
+
+    <p>My younger son, at the age of two, <em>loved</em> a <b>Typing Race</b> I adopted from another developer's project. It was simply the aphabet in a web browser 'listening' for keystrokes (onkeypress or keypress event in javascript). If the key pressed matched the first letter in the alphabet string, we remove it, highlight the next letter, and listen for the next keypress event.</p>
+
+    <p>The Typing Race exercises a crucial skill that never gets mentioned in all those fancy academic books on 21st Century Learning: <em>familiarization with a keyboard</em>. Legible handwriting is a great skill, but in a world where the vast majority of communication is happening via typed text, I firmly believe no student should leave public school only knowing how to do the two-finger hunt-and-peck method of using a keyboard, eeking out a measily 30-40 words per minute and constantly breaking their focus from the monitor to look at the keyboard.</p>
+
+    <p>That's why I recommend <b>Typing Games</b>, where students race to type faster and faster to push race cars or blast space invaders. As it stands, there are dozens of results for "typing game" on github right now. There's a red line that grows across the screen, whose head is the letter you have to type before it reaches the end (victorbstan). There's a game of letters running across the screen, which you must type before they hit the bottom (bridgpal). There's a game that pulls lyrics of pop-songs out of spotify for you to type (1wheel). There's a crazy crazy puzzle-race typing game where you navigate a scrolling field of letters capturing points that makes my head hurt and stresses me out (mrmilosz). There's a typing game that appears to have you write lines of programming code, which are then executed when complete (hrr7-Apollo). And this is just the <em>first page of results</em>.</p>
+
+https://github.com/victorbstan/typing-game
+https://github.com/bridgpal/typing
+https://github.com/1wheel/typing
+https://github.com/mrmilosz/typerdick
+https://github.com/hrr7-Apollo/hrr7-Apollo
+
+    <p>One of my all-time favorite of these was <em>Typing of the Dead</em>, where every keystroke completing a word or sentence became a gunshot taking down hordes of the undead in a zombie apocalypse. I'm not saying we should put kindergardeners in front of a computer an have them blow the brains out of zombie heads, but my middle school-aged self would have <em>loved</em> learning typing that way. So let's adapt the idea into a more kid-friendly environment. Any of the github projects could serve as a start-point for a student to adopt, adapt, and make their own.</p>
+
+    <h3>New Media</h3>
+
+    <p>When it comes to code and expanding literacy, my favorite term is <b>New Media</b>. The term has become synonymous with <em>digital media</em>, but then, why not just say "digital media?" I prefer to think of new bedia as including all sorts of non-traditional works.  ... A flash-mob of people showing up in a public place to have a pillow fight after spontaneously coordinating on a social network is new media.</p>
+
+    <p>A key aspect of new 
+
+New Media Reader
+
+    <p>I think a choose-your-own-adventure book qualifies as new media for the way it breaks readers out of deterministic storytelling. It's also a very simple program delivered in a book. A really absurdly ridiculously easy project a student can build with no programming code is a <b>Choose Your Own Quest</b> website. Here, students write a story in a basic web page just like a Choose-Your-Own-Adventure. At the bottom of each page, instead of "Would you like to go left? Turn to page 23," they would have a link that reads "I will go left." When the user clicks on it, they are taken to another web page with text and link options. The flow of the site would look something like this, with each ".html" representing a file in the directory to which a page links via a choice:</p>
+
+    <p><img src="images/chooseyourownquest.png" /></p>
+
+    <p>This is actually a very basic program called a <em>Finite State Machine</em>, an object with preset outputs for specific inputs. It's a program, but a program in the way a vending machine is a program, outputting a pre-set snack depending on a number-value entered by the customer. The more inputs and outputs the student adds to their story, the more complex the program becomes. This is a wonderful exercise in both writing and programming.</p>
+
+    <p>As easy as this seems to me, working with digital text, files, and links might be a little too abstract for some students (or my parents). If the student is having trouble getting started writing their quest, it might be easier to have them lay out the program on index cards first (mythologyteacher.com, 2017). By numbering each card, adding some text, and a few choices that go to other cards, the student can visualize and plan out how their program will flow before translating it into HTML files with links.</p>
+
+Choose Your Own Quest!
+mythologyteacher.com
+http://mythologyteacher.com/Choose-Your-Own-Quest.php
+
+    <p>With just a few lines of code, students can create a website with <b>Annotated Prose</b>. Here, users are invited to click on or hover their mouse over words in the text. When they do so, a little window pops up with additional information, a photo, or even a related Wikipedia article. Examples of how to do this are all over the WWW, simply google the word "modal" and "box," "window," "picture," "web page," or other content they wish to have jump out for the user.</p>
+
+    <p>Another fun one to build is the <b>MadLibs</b> word game. Once again, a fairly easy program to write. Start with a paragraph of text. Students could write their own prose, or they might take a passage from a current reading assignment or a public domain/creative commons work. Just make sure to respect the copyrights. Replace certain nouns, verbs, adjectives, and other words with [NOUN1], [VERB2], [ADJECTIVE4], etc. Then, give the user a series of prompts like so (using the text "The quick brown fox jumps over the lazy dog"):</p>
+
+    <pre>
+        //The text we are going to mad-lib
+        var seedText = "The [ADJECTIVE1] [ADJECTIVE2] [NOUN1] [VERB1] over the [ADJECTIVE3] [NOUN2].";
+
+        //User inputs
+        var noun1 = prompt("Please enter a noun.", "");
+        var noun2 = prompt("Please enter a noun.", "");
+        var adjective1 = prompt("Please enter an adjective.", "");
+        var adjective2 = prompt("Please enter an adjective.", "");
+        var adjective3 = prompt("Please enter an adjective.", "");
+        var verb1 = prompt("Please enter a verb.", "");
+
+        //Replace the text in the string with the user inputs.
+        seedText.replace("[NOUN1]",noun1)
+            .replace("[NOUN2]",noun2)
+            .replace("[ADJECTIVE1]",adjective1)
+            .replace("[ADJECTIVE2]",adjective2)
+            .replace("[ADJECTIVE3]",adjective3)
+            .replace("[VERB1]",verb1);
+
+        //Show the result to the user.
+        alert(seedText);
+    </pre>
+
+    <p>This is a fairly brute-force method of constructing a mad-lib program. It's inflexible. It requires a great deal of coding if you want to change the <em>seedText</em> variable to something else. Advanced programmers will look at it and run away crying. But this code is <b>AWESOME</b> for a younger student to work with the same way repeatedly writing letters, spelling words, and practicing time tables are good for them. A great project for older students would be to review this code and ask, "How can I make it so that I can enter almost any seed text and have the program dynamically prompt the user and output a response without any further coding on my part?" Could be a great project for a hackathon.</p>
+
+    <p>Another fun classic for students to explore are <b>Text Adventure Games</b>. The 1977 <em>Zork</em> series of games by Infocom are probably the most famous example of such a game. 
+
+https://en.wikipedia.org/wiki/Zork
+
+    <p>These are similar to <em>Choose Your Own Quest</em>, but more comprehensive and advanced.  </b>
+
+https://github.com/pistacchio/Dedalus
+https://www.npmjs.com/package/text-adventure
+
+
+
+
+
+
+
+    <p><b>Story Mountain</b> ...</p>
+
+    <p>Leapfrog LeapPad...</p>
+
+
+
+
+
+
+
+
+
+    <h3>Algorithmic Prose and Poetry</h3>
+
+    <p>In 2016, the literary magazine <em>CuratedAI</em> was established, publishing stories and poems "generated by machines using the tricks of the Artificial Intelligence trade (CuratedAI, 2016)." Authors are encouaged to write a program that generates a poem or story, and submit the result along with a description of the programming technique used to generated it.
+
+http://curatedai.com/about
+http://curatedai.com/
+
+    <p><b>Algorithmically-Generated Prose and Poetry</b> ... There's that scary word, <em>algorithm</em>, which--remember--isn't all that scary sounding when you remember the recipe for Eskimo Ball Cookies is an algorithm... a yummy yummy algorithm. </p>
+
+    <p><b>taroko_gorge</b> ... </p>
+
+http://nickm.com/taroko_gorge/
+
+    <p>An algorithm that still evokes giggles from me is the <b>Shakespeare Insult Generator</b> that I found forwarded to my email inbox many times in the days before we had social networks to share things. The algorithm is very simple. To generate a Shakespearean Insult, combine one word from each of the three columns prefaced with "Thou":</p>
+
+    <style>
+    table, th, td {
+       border: 1px solid black;
+
+    }
+    td {
+        padding: 5px;
+    }
+    </style>
+
+    <table>
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+        </tr>
+        <tr>
+            <td>artless</td>
+            <td>base-court</td>
+            <td>apple-john</td>
+        </tr>
+        <tr>
+            <td>bawdy</td>
+            <td>bat-fowling</td>
+            <td>boar-pig</td>
+        </tr>
+        <tr>
+            <td>bootless</td>
+            <td>beetle-headed</td>
+            <td>flap-dragon</td>
+        </tr>
+        <tr>
+            <td>frothy</td>
+            <td>fen-sucked</td>
+            <td>flax-wench</td>
+        </tr>
+        <tr>
+            <td>lumpish</td>
+            <td>onion-eyed</td>
+            <td>miscreant</td>
+        </tr>
+        <tr>
+            <td>unmuzzled</td>
+            <td>tickle-brained</td>
+            <td>whey-face</td>
+        </tr>
+    </table>
+
+    <p>Programatically speaking, this algorithm is fairly simply to write in JavaScript as well. By putting three columns of words into three arrays:</p>
+
+    <p>var column1 = ["artless","bawdy","bootless","frothy","lumpish","unmuzzled"];</p>
+
+    <p>...the coder can pull one random word from each array, like so:</p>
+
+    <p>var word1 = column1[Math.floor(Math.random()*column1.length)];</p>
+
+    <p>...then put them together into a string like so:</p> 
+
+    <p>var insult = "'Thou ' + word1 + ' ' + word2 + ' ' + word3 + '!'"";</p>
+
+    <p>...and finally output that to the user when they click a button labeled something like "Insult Me!"</p>
+
+    <p><img src="images/shakespeareaninsultgenerator.png" /></p>
+
+
+
+    <p>&lt;JARGON&gt &lt;/JARGON&gt;</p>
+
+
+    <p>...preset sentence blocks that go in a certain order... [article/noun] + [verb] + [preposition] + [article/noun]</p>
+
+    IMG: Sentence Case-Statement Map
+
+http://jsfiddle.net/Xbw2w/
+
+    <p>Taking this to a much more advanced level...took a list of movie titles that appeared on the Lifetime Channel and used a Markov Chain analysis, which describes the probability of an event occuring after another event (ie. a baby has many behaviors, but might statistically-speaking be more likely to "eat" or "sleep" after a "crying" event (Powell & Lehe, 2016)), to generate fake movie titles like "A Nanny's Secret Society" and "My First Name of Love," which sound a little off in an uncanny-valley way (Bury, 2013).</p>
+
+Powell, Victor and Lehe, Lewis (2016). Markov Chains Explained Visually
+http://setosa.io/ev/markov-chains/
+
+Bury, Jason (2013). <em>Using Javascript and Markov Chains to Generate Text</em>. Soliant Consulting.
+http://www.soliantconsulting.com/blog/2013/02/title-generator-using-markov-chains
+
+    <p><b>Technobabble Generator</b> ... <b>Portmanteau Generator</b> ... <b>Post Modernist Journal Article Generator</b> ... <b>Computer Science Journal Article Generator</b></p>
+
+
+
+    <p>In 2016, the game <em>No Man's Sky</em> was released for purchase. Highly-anticipated for years, the game sparked interest for boasting an entire virtual galaxy full of planets filled with landscapes populated with aliens. They achieved this by algorithmically-generating the solar systems and their inhabitants at the time the explorer encountered them. The most fascinating aspect of this game was how the developers debugged it. They had to explore the game, searching for aliens that didn't look right or landscapes that didn't make sense. The galaxy was so vast that, unable to explore it all themselves, they sent out "probes" to explore for them, taking pictures from within the game and sending them back to the programmers for evaluation (Parkin, 2014).</p>
+
+Simon Parkin (July 22, 2014), No Man’s Sky: A Vast Game Crafted by Algorithms, MIT Technology Review
+https://www.technologyreview.com/s/529136/no-mans-sky-a-vast-game-crafted-by-algorithms/
+
+    <p>I bring up <em>No Man's Sky</em> because developing algorithmically-generated words, poems, and prose involves the same sort of play and <em>discovery</em>. ... <em>Tarroko Gorge???</em> seeded with nonsense words can be a fun way to see gramatical rules at work.</p>
+
+    <p><b>Computational Linguistics</b> ... <b>digital humanities</b> ... Organizations like <em>Project Gutenberg</em> help level the educational playing field by making all public domain works available for free online, but they are also providing a fantastic opportunity for new forms of critical analysis. Take a text file of </p>
+
+    <p><img src="images/prideandprejudice.png" /></p>
+
+    <p>Word Cloud of <em>Pride and Prejudice</em></p>
+
+- In fact, I edited the word list to make the cloud a bit more interesting since the most common word in Austen's classic was "had" with 1,171 instances and 564 instaces of "were" also in the text, suggesting a prolific use of the passive voice. Austen was also very fond of the word "very."
+
+https://timdream.org/wordcloud/
+
+    <h3>Grammar</h3>
+
+- Syntax
+- Morphology - morphemes crawl
+http://nlpdotnet.com/Services/Morphparser.aspx
+
+- Wikipedia API
+https://en.wikipedia.org/w/api.php
+-- Open Search
+https://en.wikipedia.org/w/api.php?action=help&modules=opensearch
+https://en.wikipedia.org/w/api.php?action=opensearch&search=comp&limit=500
+
+https://github.com/iLanguage/iLanguage
+https://github.com/kityan/morfana
+
+    <p><b>SpellCheck</b> ... </p>
+
+    <p>When I learned that the New York Times had a software to detect haikus in their prose (Times Haiku, 2016), I was instantly hooked by the concept:</p.
+
+    <blockquote>
+        How does our algorithm work? It periodically checks the New York Times home page for newly published articles. Then it scans each sentence looking for potential haikus by using an electronic dictionary containing syllable counts. We started with a basic rhyming lexicon, but over time we've added syllable counts for words like “Rihanna” or “terroir” to keep pace with the broad vocabulary of The Times. (Harris, 2013)
+    </blockquote>
+
+Harris, Jacob (2013). About Times Haiku, Retrived on 2016-11-26 from http://haiku.nytimes.com/about
+
+Times Haiku, Serendipitous Poetry from The New York Times. http://haiku.nytimes.com/
+
+    <p>The scope of the <b>haiku detector</b>, which must involve maintaining a very large dictionary of words and their syllable counts, makes it prohibitive for beginner coders to build (not that there isn't value in attempting it!). But this basic strategy holds some clever potential with a smaller, simpler dictionary. The student could create two arrays, one of five-syllable lines and one of seven-syllables, and then pull randomly from them. Alternatively, they could create an array of words they appreciate with their syllable-counts like ['technology-4', 'flower-2', 'fable-2', 'game-1'], and then pull random words out into lines in search of haiku serendipidy. The exercise of building a <b>haiku generator</b> offers the student unique insights into the art form and a requires a deep immersion into its structure.</p>
+
+    <p><b>homograph confusion detector</b> ... </p>
+
+
+    <p><b>Their, There, They're detector</b> ... </p>
+
+
+
+
+
+
+
+
+</div>
+
+</body>
+</html>

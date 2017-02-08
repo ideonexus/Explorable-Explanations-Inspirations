@@ -1,0 +1,116 @@
+
+Word Counts: 50,000 average
+http://www.ascd.org/Publications/Books/Write-a-Book-for-ASCD.aspx
+
+2,488 Introduction
+5,355 Benefits of Coding
+4,578 Explorable Explanations
+3,757 The 3,000 Year History
+3,590 The Art of Coding
+2,907 The Coding Playground
+2,825 Our First Program
+4,220 Coding on the Stack of Giants
+5,217 Building a Coding Community
+ Is Coding the New Literacy?
+ Explorable Explanatons Inspirations
+34,937 Total
+
+---------------------------------------------------
+
+Students as Experts
+
+---------------------------------------------------
+
+Thinking you don't know something because you don't know how people talk about it.
+- Matt: knew all these programming concepts, just didn't know the words we use to talk about them.
+
+---------------------------------------------------
+
+Extra Credits
+
+https://www.youtube.com/watch?v=z06QR-tz1_o
+https://www.youtube.com/watch?v=dHMNeNapL1E
+
+- Keep it really simple, add complexity later
+- Estimate how long it will take you, then add 50%
+- No project longer than one-month.
+- Demo early.
+- Revist the code daily or you'll forget what it's about.
+
+Early coders will be immensely attached to their code. This is code that took hours and hours to write, much of it excruciating to figure out. I know. I was extremely attached to my early coding efforts.
+
+I was extremely attached to the first scribbles my boys made on paper. I cherished that first "ABC."
+
+What students can't see yet is the perspective of their future selves. That future self is going to be a much more experienced and confident coder. They will look back at this early code 
+
+---------------------------------------------------
+
+Science is like watching a chess game metaphor. At its core, computer programming is about modeling things. Oftentimes we are modeling fantasy worlds with their own rules in video games, but the software we work with and rely upon in our day-to-day lives seeks to model small parts of our shared reality.
+
+
+
+
+Chapter Idea: Explorable Explanations Cookbook
+
+- Fable of the chessboard: a loop to demonstrate exponents.
+
+- Prime number tester.
+
+- I, Ching Boolean Calculator
+
+-----------------------------------------------------
+
+    <p>Although the concept of the cognitive toolkit suggests returning to complex subjects after exploring elsewhere for the tools to make them more accessible, there is something to be said for hacking and slashing our way through the dense jungle of a complex subject--or complex code. The complexity makes for a greater challenge and an increased risk of failure, but the rewards are also much greater.</p>
+
+-----------------------------------------------------
+
+"As a coach celebrates a big play to win the championship or just an all-around good practice, the PBL teacher should also take opportunities to celebrate successes—both big and small (Chichanowski, 2013)."
+
+-----------------------------------------------------
+
+
+
+<p>Technology is a mercurial miasma that morphs into something new by the time we've just started grasping the latest trend. That's why I try to avoid naming specific technologies, sites, and software in this book. At this moment, the names Scratch, _____, and Minecraft are very popular, but they likely won't be in a few years. For all his writing on the wonders of LOGO programming, where is Seymore Papert's favorite revolutionary educational tool today? Where is BASIC?</p>
+
+<p>Even if I wasn't too lazy to keep producing new editions of this book to update the names, I think it would be a disservice to my readers to write a book that will be obsolete in just a few years. Used bookstores have bargain bins full of books about yesterday's technologies. As we learned in chapter 5, the stack goes down thousands of years, so the basic, universal principles are what we should focus on. Things like <em>how</em> to find support, <em>what</em> are the characteristics of good references, and <em>why</em> students should become active collaborators in the coding community.</p>
+
+
+-----------------------------------------------------
+
+
+
+
+    <h2>Explore</h2>
+    <p><b>Spend 20 Percent of Your Time Learning New Things</b></p>
+    <blockquote>
+      Joe Armstrong: Hamming said, "I always spend a day a week learning new stuff. That means I spend 20 percent more of my time than my colleagues learning new stuff. Now 20 percent at compound interest means that after four and a half years I will know twice as much as them. And because of compound interest, this 20 percent extra, one day a week, after five years I will know three times as much," or whatever the figures are. And I think that's very true. Because I do research I don't spend 20 percent of my time thinking about new stuff, I spend 40 percent of my time thinking about new stuff. And I've done it for 30 years. So I've noticed that I know a lot of stuff. When I get pulled in as a troubleshooter, boom, do it that way, do it that way. You were asking earlier what should one do to become a better programmer? Spend 20 percent of your time learning stuff—because it's compounded.
+    </blockquote>
+    <p>(<a href="http://mxplx.com/meme/448/">source</a>)</p>
+
+    <p><b>Research Subjects Expand Naturally on Their Own</b></p>
+    <blockquote>
+      Once you start the mill turning then computer science is very fractal—almost everything turns out to be interesting, because the subject grows ahead of you. It's not like a fixed thing that's there that you've got to discover. It just expands.
+    </blockquote>
+    <p>(<a href="http://mxplx.com/meme/450/">source</a>)</p>
+
+    <h2>Kill Your Darlings / Collaborate</h2>
+    <p>Don't Get Attached to Your Code</p>
+    <blockquote>
+      George Malamidis taught me something about code attachment a few years ago: You always gain by allowing someone to show you an alternative solution. If someone wants to solve a problem in a different way, there are several gains to be had. If their way is inferior, you have an opportunity to mentor a team-mate. If their way is equally elegant, you've gained another solution, or point of view that may be superior in the future. If their way is superior you learn something new and the codebase improves. In exchange for these gains you only need to give up time. Time is valuable, but it's also well spent on improving the ability of a team-mate or your personal ability.
+    </blockquote>
+    <p>(<a href="http://mxplx.com/meme/307/">source</a>)
+
+    <h2>Lifelong Learning</h2>
+    <p></p>
+    <blockquote>
+      (<a href="">source</a>)
+    </blockquote>
+
+    <h2>...On the Shoulders of Giants</h2>
+    <p></p>
+    <blockquote>
+      (<a href="">source</a>)
+    </blockquote>
+
+
+
